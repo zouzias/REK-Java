@@ -1,5 +1,5 @@
 #!/bin/bash
 
-mvn compile test
+mvn clean compile test
 
 
