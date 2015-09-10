@@ -1,19 +1,12 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package org.zouzias.rek.algorithms;
 
 import static org.junit.Assert.assertTrue;
 import org.junit.Test;
-import org.zouzias.algorithms.REKSolver;
-import org.zouzias.matrix.DenseMatrix;
-import org.zouzias.matrix.DoubleMatrix;
-import org.zouzias.matrix.SparseMatrix;
-import org.zouzias.vector.DenseVector;
-import org.zouzias.vector.DoubleVector;
+import org.zouzias.rek.matrix.DenseMatrix;
+import org.zouzias.rek.matrix.DoubleMatrix;
+import org.zouzias.rek.matrix.SparseMatrix;
+import org.zouzias.rek.vector.DenseVector;
+import org.zouzias.rek.vector.DoubleVector;
 
 /**
  *
