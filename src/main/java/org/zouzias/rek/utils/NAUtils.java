@@ -1,4 +1,4 @@
-package org.zouzias.utils;
+package org.zouzias.rek.utils;
 
 /**
  * Numerical analysis tricks (for computing norms)
@@ -10,7 +10,7 @@ public class NAUtils {
      *
      * @param a
      * @param b
-     * @return
+     * @return  sqrt(a^2 + b^2)
      */
     public static double hypot(double a, double b) {
         double r;

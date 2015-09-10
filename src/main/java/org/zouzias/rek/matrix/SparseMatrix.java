@@ -1,11 +1,11 @@
-package org.zouzias.matrix;
+package org.zouzias.rek.matrix;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.zouzias.utils.NAUtils;
-import org.zouzias.vector.DenseVector;
-import org.zouzias.vector.DoubleVector;
-import org.zouzias.vector.SparseVector;
+import org.zouzias.rek.utils.NAUtils;
+import org.zouzias.rek.vector.DenseVector;
+import org.zouzias.rek.vector.DoubleVector;
+import org.zouzias.rek.vector.SparseVector;
 
 /** A sparse matrix implementation. The current implementation stores the matrix 
  * as a list of sparse row vectors but also as a list of sparse column vector. 

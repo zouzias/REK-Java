@@ -1,6 +1,6 @@
-package org.zouzias.matrix;
+package org.zouzias.rek.matrix;
 
-import org.zouzias.vector.DoubleVector;
+import org.zouzias.rek.vector.DoubleVector;
 
 /** Interface for a matrix with double entries.
  *
@@ -16,14 +16,14 @@ public interface DoubleMatrix {
     /**
      * Get the number of rows
      * 
-     * @return
+     * @return Number of rows
      */
     public int getRowDimension();
 
     /**
      * Get the number of columns
      *
-     * @return
+     * @return Number of columns
      */
     public int getColumnDimension();
 
@@ -31,7 +31,7 @@ public interface DoubleMatrix {
      * Get the i-th row
      * 
      * @param i
-     * @return
+     * @return i-th row
      */
     public DoubleVector getRow(int i);
 
@@ -39,7 +39,7 @@ public interface DoubleMatrix {
      * Get the j-th column
      *
      * @param j
-     * @return
+     * @return j-th column
      */
     public DoubleVector getColumn(int j);
 
@@ -70,7 +70,7 @@ public interface DoubleMatrix {
     /** 
      * Frobenius norm of a matrix A, i.e., normF(A)= sqrt(sum_{i,j} A(i,j)^2)
      *
-     * @return
+     * @return Frobenius norm of matrix
      */
     public double normF(); // Frobenius norm of matrix
 
@@ -79,7 +79,7 @@ public interface DoubleMatrix {
      *
      * @param i
      * @param j
-     * @return
+     * @return (i,j) matrix entry
      */
     public double get(int i, int j);
 

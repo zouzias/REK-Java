@@ -1,10 +1,10 @@
-package org.zouzias.matrix;
+package org.zouzias.rek.matrix;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.zouzias.utils.NAUtils;
-import org.zouzias.vector.DenseVector;
-import org.zouzias.vector.DoubleVector;
+import org.zouzias.rek.utils.NAUtils;
+import org.zouzias.rek.vector.DenseVector;
+import org.zouzias.rek.vector.DoubleVector;
 
 /**
  * An implementation of a dense real matrix. 
@@ -56,7 +56,6 @@ public final class DenseMatrix implements DoubleMatrix {
      *
      * @param A Two-dimensional array of doubles.
      * @exception IllegalArgumentException All rows must have the same length
-     * @see #constructWithCopy
      */
     public DenseMatrix(double[][] A) {
         m = A.length;

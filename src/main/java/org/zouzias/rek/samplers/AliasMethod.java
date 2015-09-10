@@ -1,4 +1,4 @@
-package org.zouzias.samplers;
+package org.zouzias.rek.samplers;
 
 import java.util.ArrayDeque;
 import java.util.ArrayList;

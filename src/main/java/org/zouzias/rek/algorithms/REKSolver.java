@@ -1,9 +1,9 @@
-package org.zouzias.algorithms;
+package org.zouzias.rek.algorithms;
 
-import org.zouzias.matrix.DoubleMatrix;
-import org.zouzias.samplers.AliasMethod;
-import org.zouzias.vector.DenseVector;
-import org.zouzias.vector.DoubleVector;
+import org.zouzias.rek.matrix.DoubleMatrix;
+import org.zouzias.rek.samplers.AliasMethod;
+import org.zouzias.rek.vector.DenseVector;
+import org.zouzias.rek.vector.DoubleVector;
 
 /**
  * Implementation of the randomized extended Kaczmarz method as in [1]. Alias method is used for 
@@ -13,16 +13,17 @@ import org.zouzias.vector.DoubleVector;
 public class REKSolver implements LeastSquaresSolver {
     
     /**
-     *
+     * Check for convergence every
      */
     private static int CheckEvery = 1000;
 
-    /** Executes the randomized extended Kaczmarz algorithm for maxSeconds seconds.
+    /**
+     * Executes the randomized extended Kaczmarz algorithm for maxSeconds seconds.
      *
      * @param A
      * @param b
      * @param maxSeconds
-     * @return
+     * @return  Solution vector x of argmin ||Ax - b||_2
      */
     @Override
     public DoubleVector solve(DoubleMatrix A, DoubleVector b, double maxSeconds) {
@@ -53,12 +54,13 @@ public class REKSolver implements LeastSquaresSolver {
         return x;
     }
 
-    /** Executes the randomized extended Kaczmarz algorithm for @MaxIterations iterations
+    /**
+     * Executes the randomized extended Kaczmarz algorithm for @MaxIterations iterations
      *
      * @param A
      * @param b
      * @param MaxIterations
-     * @return
+     * @return  Solution vector x of argmin ||Ax - b||_2
      */
     @Override
     public DoubleVector solve(DoubleMatrix A, DoubleVector b, long MaxIterations) {
@@ -87,7 +89,12 @@ public class REKSolver implements LeastSquaresSolver {
         return x;
     }
 
-    /** Check if the elapsed time is more than maxSeconds (with reference time referenceTime)
+    /**
+     * Check if time is up in seconds
+     *
+     * @param referenceTime
+     * @param maxSeconds
+     * @return  True if time is up
      */
     public boolean timeIsUp(double referenceTime, double maxSeconds) {
         return System.currentTimeMillis() - referenceTime > maxSeconds * 1000;

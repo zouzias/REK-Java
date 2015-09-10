@@ -1,8 +1,7 @@
-package org.zouzias.vector;
+package org.zouzias.rek.vector;
 
-import java.util.Iterator;
 import java.util.List;
-import org.zouzias.BLAS.BLASLevelOne;
+import org.zouzias.rek.BLAS.BLASLevelOne;
 
 /**
  *
@@ -16,14 +15,14 @@ public abstract class DoubleVector implements BLASLevelOne {
 
     /** The size of the vector
      *
-     * @return
+     * @return Size of vector
      */
     public abstract int size();
 
     /** Get the i-th entry of the vector
      *
      * @param index
-     * @return
+     * @return  Value of i-th element
      */
     public abstract double get(int index);
 
@@ -48,7 +47,7 @@ public abstract class DoubleVector implements BLASLevelOne {
     
     /** Represent the vector as a list
      *
-     * @return
+     * @return Vector as list of Double
      */
     public abstract List<Double> asList();
 

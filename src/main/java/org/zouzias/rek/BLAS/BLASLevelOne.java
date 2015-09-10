@@ -1,6 +1,6 @@
-package org.zouzias.BLAS;
+package org.zouzias.rek.BLAS;
 
-import org.zouzias.vector.DoubleVector;
+import org.zouzias.rek.vector.DoubleVector;
 
 /**
  * Basic Linear Algebra Operations (Level 1)
@@ -11,7 +11,7 @@ public interface BLASLevelOne {
     /**
      * Euclidean norm of vector
      *
-     * @return
+     * @return  2-norm of vector
      */
     public abstract double DNRM2();
     /**
@@ -25,7 +25,7 @@ public interface BLASLevelOne {
      * Dot product with vector x
      *
      * @param x
-     * @return
+     * @return  Inner product with x
      */
     public abstract double DDOT(DoubleVector x); 
 }

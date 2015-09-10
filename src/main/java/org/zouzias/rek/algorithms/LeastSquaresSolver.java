@@ -1,7 +1,7 @@
-package org.zouzias.algorithms;
+package org.zouzias.rek.algorithms;
 
-import org.zouzias.matrix.DoubleMatrix;
-import org.zouzias.vector.DoubleVector;
+import org.zouzias.rek.matrix.DoubleMatrix;
+import org.zouzias.rek.vector.DoubleVector;
 
 /** Interface for Least Squares Solvers. Given a real matrix A and real vector b, solves the problem
  *  min ||Ax - b|| so that x has the minimum Euclidean norm.
@@ -14,7 +14,7 @@ public interface LeastSquaresSolver {
      * @param A
      * @param b
      * @param MaxSeconds
-     * @return
+     * @return Solution vector x of argmin ||Ax - b||_2
      */
     public DoubleVector solve(DoubleMatrix A, DoubleVector b, double MaxSeconds);   
     
@@ -23,7 +23,7 @@ public interface LeastSquaresSolver {
      * @param A A real matrix A
      * @param b A 
      * @param MaxIterations
-     * @return
+     * @return Solution vector x of argmin ||Ax - b||_2
      */
     public DoubleVector solve(DoubleMatrix A, DoubleVector b, long MaxIterations);    
 }

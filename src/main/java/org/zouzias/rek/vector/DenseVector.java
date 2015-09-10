@@ -1,8 +1,8 @@
-package org.zouzias.vector;
+package org.zouzias.rek.vector;
 
 import java.util.ArrayList;
 import java.util.List;
-import org.zouzias.utils.NAUtils;
+import org.zouzias.rek.utils.NAUtils;
 
 /** Implementation of a dense vector
  *
@@ -43,7 +43,7 @@ public final class DenseVector extends DoubleVector {
     /**
      * Get the size
      * 
-     * @return
+     * @return Size of vector
      */
     @Override
     public int size() {
@@ -54,7 +54,7 @@ public final class DenseVector extends DoubleVector {
      * Get the i-th entry
      *
      * @param i
-     * @return
+     * @return Value of i-th entry
      */
     @Override
     public double get(int i) {
@@ -107,7 +107,7 @@ public final class DenseVector extends DoubleVector {
      * Dot product with x
      *
      * @param x
-     * @return
+     * @return Inner product with vector x
      */
     @Override
     public double DDOT(DoubleVector x) {
@@ -139,7 +139,7 @@ public final class DenseVector extends DoubleVector {
     /**
      * Get the 2-norm
      *
-     * @return
+     * @return 2-norm of vector
      */
     @Override
     public double DNRM2() {
@@ -153,7 +153,7 @@ public final class DenseVector extends DoubleVector {
     /**
      * Return the vector as list
      *
-     * @return
+     * @return Vector as list of doubles
      */
     @Override
     public List<Double> asList() {

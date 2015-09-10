@@ -1,10 +1,10 @@
-package org.zouzias.vector;
+package org.zouzias.rek.vector;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import org.zouzias.utils.NAUtils;
+import org.zouzias.rek.utils.NAUtils;
 
 /** 
  * An implementation of a sparse vector
@@ -39,7 +39,7 @@ public final class SparseVector extends DoubleVector {
 
     /**
      *
-     * @return
+     * @return Number of non-zero entries
      */
     public int nnz() {
         return values.size();
@@ -48,7 +48,7 @@ public final class SparseVector extends DoubleVector {
     /**
      *
      * @param i
-     * @return
+     * @return  Value of i-th element
      */
     @Override
     public double get(int i) {
@@ -60,7 +60,7 @@ public final class SparseVector extends DoubleVector {
 
     /**
      *
-     * @return
+     * @return Size of vector
      */
     @Override
     public int size() {
@@ -108,7 +108,7 @@ public final class SparseVector extends DoubleVector {
 
     /**
      *
-     * @return
+     * @return 2-norm of vector
      */
     @Override
     public double DNRM2() {
@@ -136,7 +136,7 @@ public final class SparseVector extends DoubleVector {
     /**
      *
      * @param x
-     * @return
+     * @return  Inner product of x with @this
      */
     @Override
     public double DDOT(DoubleVector x) {
@@ -152,7 +152,7 @@ public final class SparseVector extends DoubleVector {
     
     /**
      *
-     * @return
+     * @return Vector as list
      */
     @Override
     public List<Double> asList() {
