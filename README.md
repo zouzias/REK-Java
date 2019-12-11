@@ -1,4 +1,4 @@
-## Randomized Extended Kaczmarz in Java <img src="https://travis-ci.org/zouzias/REK-Java.svg?branch=master"/>
+## Randomized Extended Kaczmarz in Java [![Build Status](https://travis-ci.org/zouzias/REK-Java.svg?branch=master)](https://travis-ci.org/zouzias/REK-Java)
 
 The Randomized Extended Kaczmarz algorithm is a randomized algorithm for solving least-squares/linear regression problems.
 
